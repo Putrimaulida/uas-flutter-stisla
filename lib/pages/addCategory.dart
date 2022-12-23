@@ -27,6 +27,7 @@ class _AddCategory extends State<AddCategory> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Add Category'),
+        
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -44,9 +45,10 @@ class _AddCategory extends State<AddCategory> {
                     icon: Icon(Icons.arrow_back)),
               ),
               TextFormField(
+                cursorColor: Colors.grey[100],
                 controller: _nameController,
                 decoration: const InputDecoration(
-                  labelText: 'Name',
+                  labelText: 'Category Name',
                 ),
               ),
               SizedBox(
